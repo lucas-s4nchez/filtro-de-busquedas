@@ -10,8 +10,83 @@
   <script src="https://kit.fontawesome.com/96e4c6db82.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="container mx-auto px-3">
+  <div class="grid gap-3 lg:grid-cols-4 my-8">
+    <div>
+      <form id="buscador" class="bg-white flex flex-wrap lg:flex-col">
+        <!-- Marca  -->
+        <div class=" flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="marca" class="block font-bold text-zinc-800">Marca</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800 " id="marca">
+            <option value="">Seleccione</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Topper">Topper</option>
+          </select>
+        </div>
+        <!-- Año  -->
+        <div class="flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="year" class="block font-bold text-zinc-800">Año</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800" id="year">
+            <option value="">Seleccione</option>
+          </select>
+        </div>
+        <!-- Precio minimo  -->
+        <div class="flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="minimo" class="block font-bold text-zinc-800"> Precio min</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800" id="minimo">
+            <option value="">Seleccione</option>
+            <option value="10000">10.000</option>
+            <option value="15000">15.000</option>
+            <option value="20000">20.000</option>
+            <option value="25000">25.000</option>
+            <option value="30000">30.000</option>
+            <option value="35000">35.000</option>
+            <option value="40000">40.000</option>
+          </select>
+        </div>
+        <!-- Precio maximo  -->
+        <div class="flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="maximo" class="block font-bold text-zinc-800"> Precio max</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800" id="maximo">
+            <option value="">Seleccione</option>
+            <option value="10000">10.000</option>
+            <option value="15000">15.000</option>
+            <option value="20000">20.000</option>
+            <option value="25000">25.000</option>
+            <option value="30000">30.000</option>
+            <option value="35000">35.000</option>
+            <option value="40000">40.000</option>
+          </select>
+        </div>
+        <!-- Genero  -->
+        <div class="flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="genero" class="block font-bold text-zinc-800"> Genero</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800" id="genero">
+            <option value="">Seleccione</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+          </select>
+        </div>
+        <!-- Color  -->
+        <div class="flex flex-col m-auto  p-1 lg:gap-1 lg:w-9/12">
+          <label for="color" class="block font-bold text-zinc-800"> Color</label>
+          <select class="w-full outline-none border-b-2 border-teal-500 py-1 text-zinc-800" id="color">
+            <option value="">Seleccione</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Azul">Azul</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Rosa">Rosa</option>
+            <option value="Rojo">Rojo</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div id="resultado"
+      class="flex flex-col flex-wrap justify-center gap-3 py-5 m-auto md:flex-row lg:col-start-2 lg:col-span-3 ">
 
+    </div>
+  </div>
 
 
   <script src="js/db.js"></script>

@@ -6,7 +6,7 @@ let stockProductos = [
     precio: 15750,
     color: "Blanco",
     genero: "Femenino",
-    año: 2020,
+    year: 2020,
   },
   {
     marca: "Adidas",
@@ -15,7 +15,7 @@ let stockProductos = [
     precio: 11200,
     color: "Rosa",
     genero: "Femenino",
-    año: 2018,
+    year: 2018,
   },
   {
     marca: "Nike",
@@ -24,7 +24,7 @@ let stockProductos = [
     precio: 17500,
     color: "Rojo",
     genero: "Masculino",
-    año: 2017,
+    year: 2017,
   },
   {
     marca: "Topper",
@@ -33,7 +33,7 @@ let stockProductos = [
     precio: 23800,
     color: "Azul",
     genero: "Masculino",
-    año: 2021,
+    year: 2021,
   },
   {
     marca: "Topper",
@@ -42,7 +42,7 @@ let stockProductos = [
     precio: 23800,
     color: "Blanco",
     genero: "Masculino",
-    año: 2022,
+    year: 2022,
   },
   {
     marca: "Adidas",
@@ -51,7 +51,7 @@ let stockProductos = [
     precio: 23800,
     color: "Blanco",
     genero: "Femenino",
-    año: 2018,
+    year: 2018,
   },
   {
     marca: "Nike",
@@ -60,7 +60,7 @@ let stockProductos = [
     precio: 39200,
     color: "Amarillo",
     genero: "Femenino",
-    año: 2019,
+    year: 2019,
   },
   {
     marca: "Nike",
@@ -69,7 +69,7 @@ let stockProductos = [
     precio: 25000,
     color: "Blanco",
     genero: "Femenino",
-    año: 2022,
+    year: 2022,
   },
   {
     marca: "Adidas",
@@ -78,7 +78,7 @@ let stockProductos = [
     precio: 30000,
     color: "Rosa",
     genero: "Femenino",
-    año: 2018,
+    year: 2018,
   },
   {
     marca: "Nike",
@@ -87,7 +87,7 @@ let stockProductos = [
     precio: 28500,
     color: "Rojo",
     genero: "Masculino",
-    año: 2021,
+    year: 2021,
   },
   {
     marca: "Topper",
@@ -96,7 +96,7 @@ let stockProductos = [
     precio: 27800,
     color: "Azul",
     genero: "Masculino",
-    año: 2021,
+    year: 2021,
   },
   {
     marca: "Topper",
@@ -105,7 +105,7 @@ let stockProductos = [
     precio: 35000,
     color: "Blanco",
     genero: "Masculino",
-    año: 2022,
+    year: 2022,
   },
   {
     marca: "Adidas",
@@ -114,7 +114,7 @@ let stockProductos = [
     precio: 40000,
     color: "Blanco",
     genero: "Masculino",
-    año: 2019,
+    year: 2019,
   },
   {
     marca: "Nike",
@@ -123,6 +123,6 @@ let stockProductos = [
     precio: 36000,
     color: "Amarillo",
     genero: "Femenino",
-    año: 2021,
+    year: 2021,
   },
 ];
