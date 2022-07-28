@@ -22,10 +22,49 @@ const datosBusqueda = {
   color: "",
 };
 
-//Funciones
+//Eventos
+document.addEventListener("DOMContentLoaded", () => {
+  //Imprime las zapatillas en el html
+  generarProductos(stockProductos);
+  //Llena el select de años
+  llenarSelect();
+});
+marca.addEventListener("change", (e) => {
+  //se le asigna a datosBusqueda.marca el valor del option que elejimos
+  datosBusqueda.marca = e.target.value;
+  filtrarProductos();
+});
+year.addEventListener("change", (e) => {
+  //se le asigna a datosBusqueda.year el valor numerico del option que elejimos
+  datosBusqueda.year = parseInt(e.target.value);
+  filtrarProductos();
+});
+precioMinimo.addEventListener("change", (e) => {
+  datosBusqueda.minimo = e.target.value;
+  filtrarProductos();
+});
+precioMaximo.addEventListener("change", (e) => {
+  datosBusqueda.maximo = e.target.value;
+  filtrarProductos();
+});
+genero.addEventListener("change", (e) => {
+  datosBusqueda.genero = e.target.value;
+  filtrarProductos();
+});
+color.addEventListener("change", (e) => {
+  datosBusqueda.color = e.target.value;
+  filtrarProductos();
+});
 
-const generarProductos = () => {
-  stockProductos.forEach((producto) => {
+//Funciones
+const borrarHtmlPrevio = () => {
+  while ($resultado.firstChild) {
+    $resultado.removeChild($resultado.firstChild);
+  }
+};
+const generarProductos = (productos) => {
+  borrarHtmlPrevio();
+  productos.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add(
       "w-full",
@@ -61,45 +100,74 @@ const llenarSelect = () => {
   }
 };
 const filtrarProductos = () => {
-  const filtrado = stockProductos.filter(filtrarMarca);
-  console.log(filtrado);
-};
-const filtrarMarca = (item) => {
-  if (datosBusqueda.marca) {
-    return item.marca === datosBusqueda.marca;
+  const productosFiltrados = stockProductos
+    .filter(filtrarMarca)
+    .filter(filtrarYaer)
+    .filter(filtrarMinimo)
+    .filter(filtrarMaximo)
+    .filter(filtrarGenero)
+    .filter(filtrarColor);
+
+  if (productosFiltrados.length) {
+    //si el array no está vacio:
+    generarProductos(productosFiltrados);
+  } else {
+    //de lo contrario:
+    sinResultados();
   }
-  return item;
 };
-//Eventos
-document.addEventListener("DOMContentLoaded", () => {
-  //Imprime las zapatillas en el html
-  generarProductos();
-  //Llena el select de años
-  llenarSelect();
-});
-// eventos para los select de busqueda
-marca.addEventListener("change", (e) => {
-  //se le asigna a datosBusqueda.marca el valor del option que elejimos
-  datosBusqueda.marca = e.target.value;
-  filtrarProductos();
-});
-year.addEventListener("change", (e) => {
-  datosBusqueda.year = e.target.value;
-  console.log(datosBusqueda);
-});
-genero.addEventListener("change", (e) => {
-  datosBusqueda.genero = e.target.value;
-  console.log(datosBusqueda);
-});
-precioMinimo.addEventListener("change", (e) => {
-  datosBusqueda.minimo = e.target.value;
-  console.log(datosBusqueda);
-});
-precioMaximo.addEventListener("change", (e) => {
-  datosBusqueda.maximo = e.target.value;
-  console.log(datosBusqueda);
-});
-color.addEventListener("change", (e) => {
-  datosBusqueda.color = e.target.value;
-  console.log(datosBusqueda);
-});
+const sinResultados = () => {
+  borrarHtmlPrevio();
+  const noResultados = document.createElement("div");
+  noResultados.classList.add(
+    "font-bold",
+    "text-xl",
+    "bg-red-600",
+    "text-center",
+    "py-2",
+    "px-1",
+    "my-0",
+    "w-full"
+  );
+  noResultados.textContent = "No encontramos las zapatilas que buscas 😢😭";
+  $resultado.appendChild(noResultados);
+};
+//El parametro "producto" seria cada producto del array stockProductos
+const filtrarMarca = (producto) => {
+  if (datosBusqueda.marca) {
+    return producto.marca === datosBusqueda.marca;
+  }
+  return producto;
+};
+const filtrarYaer = (producto) => {
+  if (datosBusqueda.year) {
+    return producto.year === datosBusqueda.year;
+  }
+  return producto;
+};
+const filtrarMinimo = (producto) => {
+  if (datosBusqueda.minimo) {
+    //si el precio es mayor o igual al minimo
+    return producto.precio >= datosBusqueda.minimo;
+  }
+  return producto;
+};
+const filtrarMaximo = (producto) => {
+  if (datosBusqueda.maximo) {
+    //si el precio es mayor o igual al minimo
+    return producto.precio <= datosBusqueda.maximo;
+  }
+  return producto;
+};
+const filtrarGenero = (producto) => {
+  if (datosBusqueda.genero) {
+    return producto.genero === datosBusqueda.genero;
+  }
+  return producto;
+};
+const filtrarColor = (producto) => {
+  if (datosBusqueda.color) {
+    return producto.color === datosBusqueda.color;
+  }
+  return producto;
+};
