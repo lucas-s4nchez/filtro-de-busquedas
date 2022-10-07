@@ -85,7 +85,10 @@ const generarProductos = (productos) => {
     <h2 class="text-2xl font-bold text-gray-700">${producto.nombre}</h2>
     <p class=' year text-sm font-bold text-gray-700' >${producto.year}</p>
     <p class='text-xs font-bold text-gray-700'>Color: <span class='color' >${producto.color}</span></p>
-    <p class="block text-xl font-semibold text-gray-700 mb-2">$ <span class='precio'>${producto.precio}</span> </p>
+    <p class="block text-xl font-semibold text-gray-700 mb-4">$ <span class='precio'>${producto.precio}</span> </p>
+    <a href="./productDetails.html?id=${producto.id}" class="py-2 px-4 bg-blue-400 rounded text-white">
+      Ver Detalles
+    </a>
   </div>
   `;
     $resultado.appendChild(div);
