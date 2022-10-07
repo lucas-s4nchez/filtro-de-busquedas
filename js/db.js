@@ -1,5 +1,6 @@
 let stockProductos = [
   {
+    id: 1,
     marca: "Nike",
     imagen: "../img/product1.webp",
     nombre: "Air Max SC",
@@ -7,8 +8,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Femenino",
     year: 2020,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 2,
     marca: "Adidas",
     imagen: "../img/product2.webp",
     nombre: "Arnold",
@@ -16,8 +20,11 @@ let stockProductos = [
     color: "Rosa",
     genero: "Femenino",
     year: 2018,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 3,
     marca: "Nike",
     imagen: "../img/product3.webp",
     nombre: "Air Max ",
@@ -25,8 +32,11 @@ let stockProductos = [
     color: "Rojo",
     genero: "Masculino",
     year: 2017,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 4,
     marca: "Topper",
     imagen: "../img/product4.webp",
     nombre: "Rocky Balboa",
@@ -34,8 +44,11 @@ let stockProductos = [
     color: "Azul",
     genero: "Masculino",
     year: 2021,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 5,
     marca: "Topper",
     imagen: "../img/product6.webp",
     nombre: "Maradona",
@@ -43,8 +56,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Masculino",
     year: 2022,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 6,
     marca: "Adidas",
     imagen: "../img/product8.webp",
     nombre: "Lasha 109",
@@ -52,8 +68,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Femenino",
     year: 2018,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 7,
     marca: "Nike",
     imagen: "../img/product13.webp",
     nombre: "Air Jordan 1 Mid",
@@ -61,8 +80,11 @@ let stockProductos = [
     color: "Amarillo",
     genero: "Femenino",
     year: 2019,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 8,
     marca: "Nike",
     imagen: "../img/product1.webp",
     nombre: "Air Max Super Sayayin",
@@ -70,8 +92,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Femenino",
     year: 2022,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 9,
     marca: "Adidas",
     imagen: "../img/product2.webp",
     nombre: "Baki Hanma",
@@ -79,8 +104,11 @@ let stockProductos = [
     color: "Rosa",
     genero: "Femenino",
     year: 2018,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 10,
     marca: "Nike",
     imagen: "../img/product3.webp",
     nombre: "Air Max Flash",
@@ -88,8 +116,11 @@ let stockProductos = [
     color: "Rojo",
     genero: "Masculino",
     year: 2021,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 11,
     marca: "Topper",
     imagen: "../img/product4.webp",
     nombre: "Apollo Cred",
@@ -97,8 +128,11 @@ let stockProductos = [
     color: "Azul",
     genero: "Masculino",
     year: 2021,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 12,
     marca: "Topper",
     imagen: "../img/product6.webp",
     nombre: "EL Bicho",
@@ -106,8 +140,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Masculino",
     year: 2022,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 13,
     marca: "Adidas",
     imagen: "../img/product8.webp",
     nombre: "Klokov",
@@ -115,8 +152,11 @@ let stockProductos = [
     color: "Blanco",
     genero: "Masculino",
     year: 2019,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
   {
+    id: 14,
     marca: "Nike",
     imagen: "../img/product13.webp",
     nombre: "Klaus",
@@ -124,5 +164,7 @@ let stockProductos = [
     color: "Amarillo",
     genero: "Femenino",
     year: 2021,
+    descripcion:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit, aspernatur eos praesentium itaque quo unde distinctio at! Commodi necessitatibus aliquam aliquid sapiente possimus odio consectetur qui maxime provident maiores?",
   },
 ];
